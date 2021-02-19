@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'counterdemo_screen.dart';
+import 'formdemo_screen.dart';
 import 'listdemo_screen.dart';
 import 'listevent_screen.dart';
 import 'widgetlifecycle_screen.dart';
@@ -31,6 +32,10 @@ class StartScreen extends StatelessWidget {
           RaisedButton(
             onPressed: () => Navigator.pushNamed(context, ListEventScreen.routeName),
             child: Text('List Event Demo'),
+          ),
+          RaisedButton(
+            onPressed: () => Navigator.pushNamed(context, FormDemoScreen.routeName),
+            child: Text('Form Demo'),
           ),
         ],
       ),
